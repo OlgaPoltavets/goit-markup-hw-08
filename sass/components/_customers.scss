@@ -1,0 +1,25 @@
+/* Client */
+.customers {
+    @extend %section;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.customers-container {
+    @extend %container;
+    
+}
+
+.customers-title {
+    @extend %section-title;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+
+        font-size: 36px;
+        line-height: 1.17;
+    }
+}

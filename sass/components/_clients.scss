@@ -1,0 +1,41 @@
+.clients {
+    @extend %list;
+    @extend %centeredFlex;
+    flex-wrap: wrap;
+
+    display: flex;
+    margin: -15px;
+
+    .item {
+    margin: 15px;
+    }
+}
+
+.clients-link {
+    @extend %centeredFlex;
+
+    width: 210px;
+    height: 90px;
+
+    transition: border 250ms $timing-function,
+    color 250ms $timing-function;
+
+    color: $client-color;
+    fill: currentColor;
+
+    border: 1px solid $client-color;
+    border-radius: 4px;
+
+    &:hover, &:focus {
+    border: 1px solid $accent-color;
+    color: $accent-color;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
+}
